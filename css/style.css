@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1407px;
+    margin: 0 auto;
+}
+
+.title h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF5538;
+    text-transform: capitalize;
+}
+.title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 449px;
+    line-height: 140%;
+    margin-top: 10px;
+}
+/* ==================================================
+                        Nav Part Start
+=================================================== */
+nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav .box{
+    display: flex;
+}
+nav .logo{
+    width: 20%;
+}
+nav .nav-item {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-item ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;  
+}
+nav .nav-item ul li i{
+    margin-left: 14px;
+}
+nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffff;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+nav .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ==================================================
+                        Nav Part End
+=================================================== */
+/* ==================================================
+                        Banner Part Start
+=================================================== */
+.banner{
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 293px 0 297px;
+    position: relative;
+}
+.banner .round-shape{
+    width: 121.46px;
+    height: 121.46px;
+    border: 2px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 790px;
+    animation: rotate 4s infinite linear;
+}
+.banner .round-shape .inner-shape{
+    width: 20px;
+    height: 20px;
+    background: #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.banner .dot{
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 290px;
+    right: 810px;
+    animation: tb 2s infinite linear alternate;
+}
+@keyframes tb{
+    from{
+        transform: translateY(-50px);
+    }to{
+        transform: translateY(0);
+    }
+}
+.banner .cross{
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 370px;
+    right: 540px;
+    animation: rotate 2s infinite linear;
+}
+.banner .cross2{
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 370px;
+    left: 540px;
+    animation: rotate 2s infinite linear;
+}
+
+.banner h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #29313D;
+    width: 771px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 547px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+.banner .button{
+    text-align: center;
+}
+.banner .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+.banner .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ==================================================
+                        Banner Part End
+=================================================== */
+/* ==================================================
+                        Service Part Start
+=================================================== */
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.service .item{
+    width: 32.5%;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 7px 82px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 82px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 82px 4px rgba(0,0,0,0.75);
+    padding: 30px 30px;
+    box-sizing: border-box;
+}
+.service .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+.service .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+}
+/* ==================================================
+                        Service Part End
+/* ==================================================
+                        Digital-Life Part Start
+=================================================== */
+.digital-life .box{
+    display: flex;
+}
+.digital-life .left{
+    width: 50%;
+}
+.digital-life .left img{
+    position: relative;
+    right: 0;
+    top: 100px;
+    width: 110%;
+    z-index: 1;
+    height: 450px; /* Left img height fixed */
+}
+.digital-life .right{
+    width: 50%;
+    background: url(../images/digitalbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 200px;
+}
+.digital-life .right h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #29313D;
+    width: 570px;
+}
+.digital-life .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 501px;
+    line-height: 200%;
+    margin-top: 20px;
+}
+.digital-life .button{
+    padding-top: 48px;
+}
+.digital-life .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    color: #ffff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+.digital-life .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ==================================================
+                        Digital-Life Part End
+/* ==================================================
+                        Work Part Start
+=================================================== */
+.work{
+    margin-top: 120px;
+    position: relative;
+}
+.work .workposition{
+    position: absolute;
+    top: -320px;
+    left: 0;
+}
+.work .workposition img{
+    z-index: -1;
+   width: 90%;
+   height: 90%;
+}
+.work .box{
+    display: flex;
+    justify-content: space-between;
+}
+.work .box .text{
+    width: 80%;
+}
+.work .box .text .title h2{
+    width: 693px;
+    margin-bottom: 60px;
+}
+.work .box .button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.work .button a{
+    display: inline-block;
+    background: transparent;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    color: #FF5538;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid #FF5538;
+    transition: 0.4s;
+}
+.work .button a:hover{
+    background: #FF5538;
+    color: #ffff;
+    border-color: transparent;
+}
+
+.work .small-item{
+    width: 40%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.work .large-item{
+    width: 58%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.work img{
+    width: 100%;
+    height: 332px;
+}
+.work .text-box{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -123px;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    opacity: 0;
+    transition: 0.4s;
+}
+.work .small-item:hover .text-box{
+    bottom: 0;
+    opacity: 1;
+}
+.work .large-item:hover .text-box{
+    bottom: 0;
+    opacity: 1;
+}
+.work .text-box h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+}
+.work .text-box a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF5538;
+    display: inline-block;
+}
+/* ==================================================
+                        Work Part End
+/* ==================================================
+                        Counting Part Start
+=================================================== */
+.counting{
+    background: url(../images/countingbg.png) no-repeat center;
+    background-size: cover;
+    padding: 120px 0;
+    margin-top: 120px;
+}
+.counting .box{
+    display: flex;
+}
+.counting .count{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.counting .count .item{
+    width: 47%;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 74px 0;
+}
+.counting .count .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #29313D;
+}
+.counting .count .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 80px;
+    margin: 0 auto;
+}
+.counting .details{
+    width: 50%;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.counting .details .title h2{
+    width: 552px;
+}
+.counting .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    width: 524px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.counting .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    color: #ffff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+.counting .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ==================================================
+                        Counting Part End
+/* ==================================================
+                        Global Part Start
+=================================================== */
+.global{
+    margin-top: 120px;
+}
+.global .title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.global .title h2{
+    width: 849px;
+    margin: 0 auto;
+}
+.global .box{
+    display: flex;
+    justify-content: space-between;
+}
+/* ==================================================
+                        Global Part End
+=================================================== */
+/* ==================================================
+                        Customer Part Start
+=================================================== */
+.customer{
+    background: url(../images/customer/customerbg.png) no-repeat center;
+    background-size: cover;
+    padding: 139px 0;
+    margin-top: 120px;
+}
+.customer .box{
+    display: flex;
+}
+.customer .details{
+    width: 50%;
+}
+.customer .imgbox{
+    display: flex;
+    column-gap: 28px;
+    margin-top: 60px;
+}
+.customer .details p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    margin: 60px 0;
+}
+.customer .details h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    display: inline-block;
+}
+.customer .details i{
+    background: #FF5538;
+    padding: 20px 24px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 0 12px;
+    color: #ffff;
+    transition: 0.4s;
+}
+.customer .details i:hover{
+    background: #FFDDD7;
+    color: #130F26;
+}
+.customer .img{
+    width: 50%;
+    text-align: center;
+}
+/* ==================================================
+                        Customer Part End
+=================================================== */
+/* ==================================================
+                        Project Part Start
+=================================================== */
+.project{
+    background: url(../images/project/projectbg.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.project .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.project h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #29313D;
+    margin-bottom: 7px;
+}
+.project .button a{
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    color: #ffff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+.project .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+.project .line{
+    width: 100%;
+    height: 2px;
+    background: rgba(41, 49, 61, 0.2);
+}
+.project p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    color: rgba(41, 49, 61, 0.8);
+    margin-top: 24px;
+}
+/* ==================================================
+                        Project Part End
+=================================================== */
+/* ==================================================
+                        Footer Part Start
+=================================================== */
+.footer{
+    margin-top: 140px;
+
+}
+.footer .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+.footer .box1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-up .logo p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+    color: rgba(41, 49, 61, 0.9);
+    width: 449px;
+}
+.footer .footerfonts h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #29313D;
+    margin-bottom: 48px;
+}
+.footer .footerfonts p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    color: rgba(41, 49, 61, 0.9);
+    margin-bottom: 30px;
+}
+.footer .footer-down .allright{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(41, 49, 61, 0.9);
+}
+.footer .footer-down .box1 a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(41, 49, 61, 0.9);
+    margin: 0 15px;
+}
+
+/* ==================================================
+                        Footer Part End
+=================================================== */
